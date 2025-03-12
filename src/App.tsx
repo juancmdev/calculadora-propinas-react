@@ -11,9 +11,13 @@ function App() {
         </h1>
       </header>
 
-      <main className="max-w-7xl mx-auto py-20 flex">
-        <h2>Menú</h2>
-        <h2>Consumo</h2>
+      <main className="max-w-7xl mx-auto py-20 grid md:grid-cols-2">
+        <div>
+          <h2>Menú</h2>
+        </div>
+        <div>
+          <h2>Consumo</h2>
+        </div>
       </main>
     </>
   );
