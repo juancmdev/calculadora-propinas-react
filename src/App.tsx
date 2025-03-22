@@ -1,9 +1,10 @@
 import MenuItem from "./components/MenuItem";
+import OrderContents from "./components/OrderContents";
 import { menuItems } from "./data/db";
 import useOrder from "./hooks/useOrder";
 
 function App() {
-  const { addItem } = useOrder();
+  const { order, addItem } = useOrder();
 
   return (
     <>
@@ -22,7 +23,9 @@ function App() {
             ))}
           </div>
         </div>
-        <div className="border border-dashed"></div>
+        <div className="border border-dashed border-slate-300 p-5 rounded space-y-10">
+          <OrderContents order={order} />
+        </div>
       </main>
     </>
   );
