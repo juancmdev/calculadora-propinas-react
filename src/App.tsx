@@ -22,9 +22,7 @@ function App() {
             ))}
           </div>
         </div>
-        <div>
-          <h2>Consumo</h2>
-        </div>
+        <div className="border border-dashed"></div>
       </main>
     </>
   );
