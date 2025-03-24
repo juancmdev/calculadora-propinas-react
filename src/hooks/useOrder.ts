@@ -4,6 +4,7 @@ import { menuItems } from "../data/db";
 
 export default function useOrder() {
   const [order, setOrder] = useState<OrderItem[]>([]);
+  const [tip, setTip] = useState(0);
 
   const addItem = (item: MenuItem) => {
     const itemExists = order.find((orderItem) => orderItem.id === item.id);
