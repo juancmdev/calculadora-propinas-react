@@ -27,7 +27,7 @@ function App() {
         <div className="border border-dashed border-slate-300 p-5 rounded space-y-10">
           <OrderContents order={order} removeItem={removeItem} />
 
-          <OrderTotals />
+          <OrderTotals order={order} />
         </div>
       </main>
     </>
