@@ -30,7 +30,7 @@ function App() {
 
           <TipPercentageForm setTip={setTip} />
 
-          <OrderTotals order={order} />
+          <OrderTotals order={order} tip={tip} />
         </div>
       </main>
     </>
