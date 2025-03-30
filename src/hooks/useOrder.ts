@@ -26,11 +26,16 @@ export default function useOrder() {
     setOrder(order.filter((item) => item.id !== id));
   };
 
+  const placeOrder = () => {
+    console.log("Guardando...");
+  };
+
   return {
     order,
     tip,
     setTip,
     addItem,
     removeItem,
+    placeOrder,
   };
 }

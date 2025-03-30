@@ -6,7 +6,7 @@ import OrderTotals from "./components/OrderTotals";
 import TipPercentageForm from "./components/TipPercentageForm";
 
 function App() {
-  const { order, addItem, removeItem, tip, setTip } = useOrder();
+  const { order, tip, setTip, addItem, removeItem, placeOrder } = useOrder();
 
   return (
     <>
@@ -30,7 +30,7 @@ function App() {
 
           <TipPercentageForm setTip={setTip} />
 
-          <OrderTotals order={order} tip={tip} />
+          <OrderTotals order={order} tip={tip} placeOrder={placeOrder} />
         </div>
       </main>
     </>
