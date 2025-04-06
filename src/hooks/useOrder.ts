@@ -1,6 +1,6 @@
 import { useState } from "react";
 import type { MenuItem, OrderItem } from "../types";
-import { menuItems } from "../data/db";
+// import { menuItems } from "../data/db";
 
 export default function useOrder() {
   const [order, setOrder] = useState<OrderItem[]>([]);
